@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom"
 import Header from "../components/Header"
+import Modal from "../components/Modal"
 
 export default function layout() {
   return (
@@ -8,6 +9,8 @@ export default function layout() {
         <main className="container mx-auto py-16">
             <Outlet/>
         </main>
+
+        <Modal/>
     </>
   )
 }
