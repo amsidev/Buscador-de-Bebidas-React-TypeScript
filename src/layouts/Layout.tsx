@@ -19,6 +19,7 @@ export default function layout() {
         <main className="container mx-auto py-16">
             <Outlet/>
         </main>
+        
 
         <Modal/>
     </>
