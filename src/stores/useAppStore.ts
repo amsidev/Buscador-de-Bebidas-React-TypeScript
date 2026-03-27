@@ -5,6 +5,7 @@ import { createFavoritesSlice, type FavoritesSliceType} from './favoritesSlice'
 import { createNotificationSlice, type NotificationSliceType } from './notificationSlice'
 
 
+
 //create genera el state
 export const useAppStore = create<RecipeSliceType & FavoritesSliceType & NotificationSliceType>()(devtools((...a) => ({ // con ...a se toma una copia de los argumentos
     ...createRecipeSlice(...a),
